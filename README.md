@@ -35,17 +35,17 @@ Visiting `/sweets` will list all of the sweets. Visiting `/vendors` will list al
 
 4. On this show view, clicking on a vendor should take you to that vendor's show view.
 
-5. The vendor's show view should list all the sweets it sells.
+5. The vendor's show view should list all the sweets they sell.
 
-6. In The vendor's show view there should be a form that will allow us to associated the sweet with a vendor.
+6. In The vendor's show view there should be a form that will allow us to associat the sweet with a vendor.
 
-7. The vendor_sweet association form will allow us to:
+7. The `vendor_sweet` association form will allow us to:
   * Select a sweet from a dropdown.
   * Leave a comment.
 
-8. Make sure that every vendor_sweet association record **MUST** include a sweet and a comment.
+8. Make sure that every `vendor_sweet` association record **MUST** include a sweet and a comment.
 
-9. Make sure the flatiron staff cannot add more than one of the same sweet to the a vendor.
+9. Make sure the flatiron staff cannot add more than one of the same sweets to a vendor.
 
 10. After submitting this form we should end up in the same view we were just on, but this time we should be able to see the sweet along with its comment.
 
