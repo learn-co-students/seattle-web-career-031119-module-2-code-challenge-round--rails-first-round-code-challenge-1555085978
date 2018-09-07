@@ -17,37 +17,27 @@ Before you begin, fork and clone this repo, run `bundle install`, `rake db:migra
 
 ## The Domain
 
-The Flatiron staff has request your help! Here at flatiron we tend to consume lots of sweets. Specially sweets... WE-LOVE-SWEETS.
+We've been building an application where we can see all of the sweets that vendors are selling. The basic skeleton has been started for you already, but we'd love to have your help with finishing it. Here at Flatiron School, we tend to consume lots of sweets. WE-LOVE-SWEETS.
 
 ![img](https://media.giphy.com/media/HGe4zsOVo7Jvy/giphy.gif)
 
-Visiting `/sweets` will list all of the sweets. Visiting `/vendors` will list all of our sweet's vendors. The Models, Views and Controllers for the sweets and vendors resources already exist. The problem is that we don't have a way to associate all the sweets with their vendors. **Vendors can sell many different sweets and sweets can be sold by many different vendors.** 
+**Vendors can sell many different sweets and sweets can be sold by many different vendors.** This means we need to create a model that let's us join the two together. For sake of simplicity, we'd like the model to be called `VendorSweet`. It will connect **a single sweet** and **a single vendor** together. Make sure to put the appropriate attributes on this model.
 
 ## Instructions / Deliverables
 
-***To help complete this task we spell out the required steps below. Look through them carefully to get a sense of the requirements of this code challenge, then tackle them one by one.***
+***To help complete this task we listed out the required steps below. Look through them carefully to get a sense of the requirements of this code challenge, then tackle them one by one.***
 
-1. On the vendors index page, clicking on a vendor's name should take us to the vendor's show view.
+1. Start with creating the `VendorSweet` model. We'll need to make sure to also have the appropriate migration to our schema for this to work. It is always suggested to test that our migration worked, so go into the console and try to create your first `VendorSweet` with a given `Sweet` and `Vendor`.
 
-2. On the sweets index page, clicking on a sweet's name should take us to the sweet's show view.
+2. A user should be able to go and create a new connection between a vendor and a sweet through a new form of `VendorSweet`. The form should include a dropdown to select a vendor and another dropdown to select its sweet. We'd like the route to this form to follow the RESTful convention. Once the `VendorSweet` is created, we'd like to go to the selected vendor's show page.
 
-3. The sweet show view should include the sweet's name and have a list of all the vendors that sell this sweet.
+3. The vendor's show page should include the vendor's name (ie. Insomnia Cookies) and a list of the sweets that they sell.
 
-4. On this show view, clicking on a vendor should take you to that vendor's show view.
+4. On the vendor's index page, we should see a list of vendor's names (we've already done this part for you). When a user clicks on a vendor's name, it should take a user to the vendor's show page.
 
-5. The vendor's show view should list all the sweets they sell.
+5. On the sweet's index page, we should see a list of sweet's names (we've already done this part for you). When a user clicks on a sweet's name, it should take a user to the sweet's show page.
 
-6. In The vendor's show view there should be a form that will allow us to associat the sweet with a vendor.
-
-7. The `vendor_sweet` association form will allow us to:
-  * Select a sweet from a dropdown.
-  * Leave a comment.
-
-8. Make sure that every `vendor_sweet` association record **MUST** include a sweet and a comment.
-
-9. Make sure the flatiron staff cannot add more than one of the same sweets to a vendor.
-
-10. After submitting this form we should end up in the same view we were just on, but this time we should be able to see the sweet along with its comment.
+6. The sweet's show page should include the sweet's name.
 
 
 ### Hints / Tips
