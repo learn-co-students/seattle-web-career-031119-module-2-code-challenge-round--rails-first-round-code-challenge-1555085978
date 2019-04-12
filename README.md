@@ -39,6 +39,7 @@ We've been building an application where we can see all of the sweets that vendo
 
 6. The sweet's show page should include the sweet's name.
 
+7. A new sweet must have a name, and a new vendor must have a name.  (Think about how you can test this with or without building full new + create actions for Sweet and Vendor.)
 
 ### Hints / Tips
 
